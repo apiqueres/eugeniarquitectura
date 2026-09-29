@@ -15,6 +15,16 @@ assets/img/         Placeholders SVG (sustituir por fotos reales)
 assets/favicon.svg
 ```
 
+## Despliegue (GitHub Pages)
+
+Repositorio: https://github.com/apiqueres/eugeniarquitectura
+Web publicada: https://apiqueres.github.io/eugeniarquitectura/
+
+GitHub Pages sirve la rama `main` desde la raíz. Cada `git push` a `main` vuelve a publicar la web
+en uno o dos minutos. Para usar el dominio propio: Settings → Pages → Custom domain (crea un CNAME
+en el DNS apuntando a `apiqueres.github.io`) y actualiza `site.url`, el canonical y las etiquetas
+Open Graph.
+
 ## Cómo verla en local
 
 Abre la carpeta con cualquier servidor estático (el mapa y las fuentes necesitan `http://`):
