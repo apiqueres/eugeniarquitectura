@@ -492,8 +492,10 @@
     const pin = $('#hero-pin'), scene = $('#scene'), copy = $('#hero-copy'), ui = $('#scene-ui'), hint = $('#inspect-hint');
     const notes = $$('#inspect-notes .note'), count = $('#inspect-count'), bar = $('#scene-progress');
     const total = notes.length;
-    const setFound = (n) => {
-      notes.forEach((el, i) => el.classList.toggle('is-found', i < n));
+    // En desktop las anotaciones se acumulan; en móvil solo se muestra la actual (una cada vez).
+    const setFound = (n, all = false) => {
+      const solo = !all && !isDesktop();
+      notes.forEach((el, i) => el.classList.toggle('is-found', solo ? i === n - 1 : i < n));
       count.textContent = `${n}/${total}`;
     };
     // Coloca cada anotación sobre la imagen según su rectángulo actual (píxeles enteros: sin desenfoque).
@@ -509,7 +511,7 @@
     $('#scene-img').addEventListener('load', place);
     if (!hasGSAP || reduced) {
       scene.classList.add('is-static', 'is-open');
-      setFound(total);
+      setFound(total, true);
       ui.style.opacity = 1; bar.style.width = '100%';
       place(); requestAnimationFrame(place);
       return;
