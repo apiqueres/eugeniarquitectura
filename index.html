@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arquitectura Eugenio Moreno — Arquitecto Técnico en Sueca (Valencia)</title>
+  <meta name="description" content="Estudio de arquitectura técnica en Sueca (Valencia). Proyectos de edificación, rehabilitación, licencias, ITE/IEE, peritajes, tasaciones y certificados energéticos. Más de 25 años de experiencia.">
+  <meta name="theme-color" content="#F2F0EB">
+  <link rel="canonical" href="https://www.arquitecturaeugeniomoreno.es/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Arquitectura Eugenio Moreno">
+  <meta property="og:title" content="Arquitectura Eugenio Moreno — Proyectamos, dirigimos y cuidamos edificios">
+  <meta property="og:description" content="Gestión integral de proyectos de arquitectura y construcción en Sueca, Valencia y la costa mediterránea.">
+  <meta property="og:url" content="https://www.arquitecturaeugeniomoreno.es/">
+  <meta property="og:image" content="https://www.arquitecturaeugeniomoreno.es/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+  <!-- Evita saltos de layout: el contenido se muestra cuando main.js lo ha renderizado.
+       Las librerias de animacion cargan en paralelo (async) y avisan por window.__lib(). -->
+  <script>
+    document.documentElement.classList.add('js-loading');
+    window.__libs = new Promise(function (res) {
+      var n = 0; window.__lib = function () { if (++n >= 4) res(); };
+      setTimeout(res, 6000);
+    });
+    setTimeout(function () { document.documentElement.classList.remove('js-loading'); }, 4000);
+  </script>
+  <style>html.js-loading main, html.js-loading footer { visibility: hidden; }</style>
+
+  <link rel="stylesheet" href="css/styles.css?v=8">
+  <!-- Imagen de portada (LCP): precarga. Si cambias hero.scene.src en content.js, actualiza también esta línea. -->
+  <link rel="preload" as="image" href="assets/img/fachada.webp" imagesrcset="assets/img/fachada.webp 1200w, assets/img/fachada@2x.webp 2000w" imagesizes="100vw" fetchpriority="high">
+
+  <!-- Datos estructurados: negocio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Arquitectura Eugenio Moreno",
+    "alternateName": "José Eugenio Moreno Grau — Arquitecto Técnico",
+    "description": "Estudio de arquitectura técnica: proyectos de edificación, rehabilitación, licencias, ITE/IEE, peritajes, tasaciones y certificados energéticos.",
+    "url": "https://www.arquitecturaeugeniomoreno.es/",
+    "telephone": "+34654394340",
+    "email": "jmgrau@caatvalencia.es",
+    "image": "https://www.arquitecturaeugeniomoreno.es/assets/img/og.jpg",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer del Sequial, 71 b, puerta 7",
+      "addressLocality": "Sueca",
+      "addressRegion": "Valencia",
+      "postalCode": "46410",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 39.2036, "longitude": -0.3106 },
+    "areaServed": ["Sueca", "Cullera", "Tavernes de la Valldigna", "Valencia", "Comunidad Valenciana"],
+    "founder": {
+      "@type": "Person",
+      "name": "José Eugenio Moreno Grau",
+      "jobTitle": "Arquitecto Técnico / Ingeniero en Edificación"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Proyectos de edificación" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reforma y rehabilitación" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Licencias y cédulas" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Técnico de cabecera para comunidades (IEE, ITE)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interiorismo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Informes periciales" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tasaciones" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Certificados energéticos" } }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- Preloader de obra (solo primera visita) -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__count mono"><span id="pre-count">000</span> %</div>
+      <ol id="pre-steps" class="preloader__steps mono"></ol>
+    </div>
+    <div class="preloader__curtain"></div>
+  </div>
+
+  <!-- Cotas de borde (solo desktop) -->
+  <div class="rulers" aria-hidden="true">
+    <div class="ruler ruler--top"><span>0000</span><span>0400</span><span>0800</span><span>1200</span><span>1600</span></div>
+    <div class="ruler ruler--left"><span>0000</span><span>0200</span><span>0400</span><span>0600</span><span>0800</span></div>
+  </div>
+
+  <!-- Cursor técnico (solo desktop) -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__cross"></div>
+    <div class="cursor__xy mono">X: 0000 / Y: 0000</div>
+    <div class="cursor__ver mono">VER</div>
+  </div>
+
+  <!-- Cabecera -->
+  <header id="header" class="header">
+    <a class="header__logo" href="#inicio" data-scroll title="Volver al inicio">
+      <span class="header__logo-short">ARQ</span><span class="header__logo-bar">|</span><span class="header__logo-name">Eugenio Moreno</span>
+    </a>
+    <nav class="header__nav" id="nav" aria-label="Secciones"></nav>
+    <div class="header__right">
+      <a class="btn btn--primary header__cta" href="#contacto" data-scroll><span class="btn__roll"><span>Pedir presupuesto</span><span aria-hidden="true">Pedir presupuesto</span></span></a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil a pantalla completa -->
+  <nav id="menu" class="menu" aria-label="Menú principal" aria-hidden="true">
+    <ol class="menu__list" id="menu-list"></ol>
+    <div class="menu__foot mono" id="menu-foot"></div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============ [01] INICIO ============ -->
+    <section id="inicio" class="s s--base hero" aria-labelledby="hero-title">
+      <!-- Portada fijada al scroll: el texto desaparece, la fachada crece y aparecen las anotaciones -->
+      <div class="hero__pin" id="hero-pin">
+        <div class="wrap hero__copy" id="hero-copy">
+          <p class="mono label hero__label" data-typing id="hero-label"></p>
+          <h1 class="display hero__title" id="hero-title" data-lines></h1>
+          <p class="hero__sub" id="hero-sub"></p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#contacto" data-scroll><span class="btn__roll"><span id="cta-primary-1"></span><span aria-hidden="true" id="cta-primary-2"></span></span></a>
+            <a class="btn" href="#proyectos" data-scroll><span class="btn__roll"><span id="cta-secondary-1"></span><span aria-hidden="true" id="cta-secondary-2"></span></span></a>
+          </div>
+          <ul class="hero__benefits mono" id="hero-benefits"></ul>
+        </div>
+
+        <!-- Escena de inspección técnica -->
+        <div class="scene" id="scene" role="img">
+          <img class="scene__img" id="scene-img" alt="" width="1200" height="900" fetchpriority="high" decoding="async">
+        </div>
+        <!-- Capa de anotaciones: fuera de la escena escalada para que el texto se mantenga nítido -->
+        <div class="scene-notes" id="inspect-notes" aria-hidden="true"></div>
+
+        <!-- Interfaz de la inspección (fuera de la escena para no escalarse) -->
+        <div class="scene-ui" id="scene-ui" aria-hidden="true">
+          <div class="scene-ui__tl mono" id="scene-label"></div>
+          <div class="scene-ui__br mono"><span id="inspect-count">0/6</span> <span id="inspect-count-label"></span></div>
+          <div class="scene-ui__bar"><i id="scene-progress"></i></div>
+        </div>
+        <p class="mono label hero__hint" id="inspect-hint"></p>
+        <ul class="sr-only" id="inspect-notes-a11y" aria-label="Anotaciones de la inspección"></ul>
+      </div>
+    </section>
+
+    <!-- Manifiesto -->
+    <section class="s s--base manifesto" aria-label="Manifiesto">
+      <div class="wrap">
+        <p class="mono label">[MANIFIESTO]</p>
+        <p class="manifesto__text display" id="manifesto"></p>
+      </div>
+    </section>
+
+    <!-- Cifras -->
+    <section class="s s--base stats" aria-label="Cifras del estudio">
+      <div class="wrap">
+        <ul class="stats__list" id="stats"></ul>
+      </div>
+    </section>
+
+    <!-- ============ [02] EUGENIO MORENO ============ -->
+    <section id="eugenio-moreno" class="s s--alt about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="mono label" data-typing id="about-label"></p>
+        <h2 class="display h2" id="about-title" data-lines></h2>
+
+        <div class="about__grid">
+          <figure class="about__photo corners" id="about-photo"></figure>
+          <div class="about__info">
+            <dl class="sheet mono" id="about-sheet"></dl>
+            <div class="about__text" id="about-text"></div>
+            <a class="mono taglink" id="about-linkedin" href="#" target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline de formación fijada al scroll -->
+      <div class="timeline" id="timeline">
+        <div class="timeline__pin">
+          <div class="wrap timeline__inner">
+            <div class="timeline__head">
+              <p class="mono label" id="timeline-label"></p>
+              <p class="mono label timeline__hint" id="timeline-hint"></p>
+            </div>
+            <div class="timeline__track"><div class="timeline__progress" id="timeline-progress"></div></div>
+            <ol class="timeline__list" id="timeline-list"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ [03] SERVICIOS ============ -->
+    <section id="servicios" class="s s--base services" aria-labelledby="services-title">
+      <div class="wrap">
+        <p class="mono label" data-typing id="services-label"></p>
+        <h2 class="display h2" id="services-title" data-lines></h2>
+        <p class="lead" id="services-intro"></p>
+        <div class="services__grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- Cómo trabajamos -->
+    <section class="s s--base process" id="process" aria-labelledby="process-title">
+      <div class="process__pin">
+        <div class="wrap process__inner">
+          <div class="process__left">
+            <p class="mono label" id="process-label"></p>
+            <h2 class="display h2" id="process-title" data-lines></h2>
+            <ol class="process__steps" id="process-steps"></ol>
+            <p class="mono label process__hint" id="process-hint"></p>
+          </div>
+          <div class="process__stage corners" id="process-stage"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ [04] PROYECTOS ============ -->
+    <section id="proyectos" class="s s--alt projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <p class="mono label" data-typing id="projects-label"></p>
+        <h2 class="display h2" id="projects-title" data-lines></h2>
+        <div class="filters mono" id="filters" role="group" aria-label="Filtrar proyectos"></div>
+        <div class="index">
+          <div class="index__head mono" id="index-head"></div>
+          <ul class="index__list" id="index-list"></ul>
+        </div>
+        <p class="mono label projects__hint" id="projects-hint"></p>
+      </div>
+      <div class="preview" id="preview" aria-hidden="true"><img alt="" id="preview-img"></div>
+    </section>
+
+    <!-- ============ [05] CONTACTO ============ -->
+    <section id="contacto" class="s s--base contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="mono label" data-typing id="contact-label"></p>
+        <h2 class="display h2 contact__title" id="contact-title" data-lines></h2>
+        <p class="lead" id="contact-sub"></p>
+
+        <div class="contact__grid">
+          <form class="form" id="form" novalidate></form>
+
+          <div class="contact__aside">
+            <p class="mono label" id="contact-data-label"></p>
+            <dl class="sheet mono" id="contact-data"></dl>
+            <div class="contact__quick">
+              <a class="btn btn--wa" id="wa-link" href="#" target="_blank" rel="noopener"></a>
+              <a class="btn" id="tel-link" href="#"></a>
+            </div>
+            <div class="map corners">
+              <p class="mono label map__label" id="map-label"></p>
+              <iframe id="map" title="Mapa de situación del estudio en Sueca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="map__marker" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a class="header__logo" href="#inicio" data-scroll><span class="header__logo-short">ARQ</span><span class="header__logo-bar">|</span><span class="header__logo-name">Eugenio Moreno</span></a>
+        <p class="footer__tagline" id="footer-tagline"></p>
+      </div>
+      <div class="footer__col">
+        <p class="mono label" id="footer-services-label"></p>
+        <ul class="footer__list" id="footer-services"></ul>
+      </div>
+      <div class="footer__col">
+        <p class="mono label" id="footer-contact-label"></p>
+        <ul class="footer__list" id="footer-contact"></ul>
+      </div>
+      <div class="footer__col">
+        <p class="mono label" id="footer-legal-label"></p>
+        <ul class="footer__list" id="footer-legal"></ul>
+      </div>
+    </div>
+    <div class="footer__skyline" id="skyline" aria-hidden="true"></div>
+    <div class="wrap footer__bottom mono">
+      <span id="footer-copy"></span>
+      <a href="#inicio" data-scroll id="footer-top"></a>
+    </div>
+  </footer>
+
+  <!-- Panel lateral de proyecto -->
+  <div class="panel-overlay" id="panel-overlay"></div>
+  <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" aria-hidden="true">
+    <div class="panel__inner" id="panel-inner"></div>
+  </aside>
+
+  <!-- Librerías -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" async onload="__lib()" onerror="__lib()"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" async onload="__lib()" onerror="__lib()"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" async onload="__lib()" onerror="__lib()"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" async onload="__lib()" onerror="__lib()"></script>
+  <script src="js/content.js?v=8" defer></script>
+  <script src="js/main.js?v=8" defer></script>
+</body>
+</html>
